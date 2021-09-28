@@ -20,7 +20,7 @@ function Login (props) {
   }
 
   return (
-    <div>
+    <div style={{ background: '#666', color: '#fff', padding:"20px" }}>
       <input type='text' onChange={e => setInput({ name: e.target.value })} />
       <button onClick={handleLogin}>Login</button>
       <button onClick={handleLogout}>Logout</button>
