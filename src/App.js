@@ -1,22 +1,20 @@
-import React, { useContext } from "react";
-import Login from "./components/Login";
-import Profile from "./components/Profile";
-import { useAuth } from "./providers/Auth";
+import Login from './components/Login'
+import Profile from './components/Profile'
 
-function App() {
+import { useAuth } from './providers/Auth'
 
-  const {user} = useAuth()
-  console.log(user);
+function App () {
+  const { user } = useAuth()
+  console.log(user)
   return (
     <div>
-        <h1>Hello world!</h1>
-        
+      <h1>Hello world!</h1>
 
-        <Profile/>
+      <Profile />
 
-        <Login/>
+      <Login />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
